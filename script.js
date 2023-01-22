@@ -1,4 +1,4 @@
-'strict mode'
+"strict mode";
 //Function
 function calculateTip() {
   //Monto a calcular de $
@@ -8,8 +8,8 @@ function calculateTip() {
   if (monto === "") {
     window.alert("Ingrese un monto para continuar");
     return; // To prevent infinite looping
-  };
-  
+  }
+
   //Do some math!
   let total = monto * 0.75;
   // total = Math.round(total*100) * 0.75;

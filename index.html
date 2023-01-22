@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    
-        <title>Calculadora Dolar</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">   
-    </head>
-    <body>
+  <head>
+    <title>Calculadora Dolar</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Calculadora Dolar</h1>
 
-        <div id="container">
-            <h1>Calculadora Dolar</h1>
+      <div id="calculator">
+        <form>
+          <label>
+            cuantos dolares??<br />
+            $ <input type="text" id="Monto" /><br />
+          </label>
 
-            <div id="calculator">
-                <form>
-                    <label>
-                        cuantos dolares??<br>
-                        $ <input type="text" id="Monto"><br>
-                    </label>
-                
-                    <button type="button" id="calculate"> A Calcular!</button>
+          <button type="button" id="calculate">A Calcular!</button>
+        </form>
+      </div>
+      <!-- Calculadora -->
 
-                </form>
+      <div id="totalTip">
+        <sup>$</sup><span id="tip">0.00</span>
+        <small id="each">each</small>
+      </div>
+      <!--totalTip-->
+    </div>
+    <!--container-->
 
-            </div> 
-            <!-- Calculadora -->
-
-            <div id="totalTip">
-                    <sup>$</sup><span id="tip">0.00</span>
-                    <small id="each">each</small>
-
-            </div><!--totalTip-->
-
-        </div> <!--container-->
-
-        <script type="text/javascript" src="script.js"></script>
-    </body>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
