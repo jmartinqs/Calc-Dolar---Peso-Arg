@@ -3,7 +3,7 @@
 body {
   background: #333 url(img/506464.jpg) center center;
   background-size: cover;
-  color: #532827;
+  color: #1a1717;
 }
 
 #container {
@@ -22,7 +22,7 @@ body {
 h1 {
   margin: 0 0 20px;
   padding: 0 0 20px;
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px rgb(12, 11, 11);
 }
 
 form {
@@ -48,10 +48,10 @@ form input[type="text"] {
 button {
   background: #76E59B;
   color: rgb(12, 12, 12);
-  border-bottom: solid 4px #222;
+  border-bottom: solid 3px #222;
   text-transform: uppercase;
-  font-size: 18px;
-  padding: 20px 30px;
+  font-size: 17px;
+  padding: 20px 20px;
   width: 100%;
 }
 

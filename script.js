@@ -4,21 +4,12 @@ function calculateTip() {
   //Monto a calcular de $
   let monto = document.getElementById("Monto").value;
 
-  //Validation
-  if (monto === "" || serviceQuality == 0) {
-    window.alert("Please enter some values to get this baby up and running!");
+  //Validation to initialize
+  if (monto === "") {
+    window.alert("Ingrese un monto para continuar");
     return; // To prevent infinite looping
-  }
-
-  //Check to see if this input is empty or less than or equal to 1
-  if (numPeople === "" || numPeople <= 1) {
-    numPeople = 1;
-
-    document.getElementById("each").style.display = "none;";
-  } else {
-    document.getElementById("each").style.display = "block";
-  }
-
+  };
+  
   //Do some math!
   let total = monto * 0.75;
   // total = Math.round(total*100) * 0.75;
