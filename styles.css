@@ -46,8 +46,8 @@ form input[type="text"] {
 }
 
 button {
-  background: #6c2726;
-  color: white;
+  background: #76E59B;
+  color: rgb(12, 12, 12);
   border-bottom: solid 4px #222;
   text-transform: uppercase;
   font-size: 18px;
