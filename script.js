@@ -1,5 +1,7 @@
 "strict mode";
+
 //Function
+
 function calculateTip() {
   //Monto a calcular de $
   let monto = document.getElementById("Monto").value;
