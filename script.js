@@ -30,3 +30,5 @@ document.getElementById("each").style.display = "none";
 document.getElementById("calculate").onclick = function () {
   calculateTip();
 };
+
+// trying to add some APIs
