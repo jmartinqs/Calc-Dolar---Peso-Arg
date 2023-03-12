@@ -1,6 +1,6 @@
 "strict mode";
 
-//Function
+//Function//
 
 function calculateTip() {
   //Monto a calcular de $
