@@ -32,3 +32,13 @@ document.getElementById("calculate").onclick = function () {
 };
 
 // trying to add some APIs
+
+const usdAmount = 100;
+const exchangeRate = 100;
+const impuesto = 0.75;
+
+const arsAmount = usdAmount * exchangeRate * (1 + impuesto);
+
+console.log(
+  `${usdAmount} USD = ${arsAmount.toFixed(2)} ARS (including 75% tax)`
+);
