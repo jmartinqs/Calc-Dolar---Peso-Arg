@@ -10,7 +10,7 @@ function convertToPesoWithTax() {
     .then((response) => response.json())
     .then((data) => {
       const usdBuyRate = parseFloat(
-        data.find((casa) => casa.casa.nombre === "Dolar Oficial").casa.compra
+        data.find((casa) => casa.casa.nombre === "Dolar Oficial").casa.venta
       );
       const pesoAmount = dollarAmount * (usdBuyRate * 1.75);
       document.getElementById(
