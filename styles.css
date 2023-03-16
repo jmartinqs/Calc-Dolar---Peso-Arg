@@ -13,7 +13,6 @@ body {
   padding: 50px;
   box-sizing: border-box;
   background: url(img/paper-pattern.jpg) top left repeat;
-  /* background: rgba(153, 164, 137, 0.817) top left repeat; */
   box-shadow: 0 10px 15px -8px #000;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -91,7 +90,7 @@ button:active {
   display: block;
 }
 
-/* @media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   #container {
     margin-top: 50%;
     margin-bottom: 50%;
@@ -99,17 +98,6 @@ button:active {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    float: none;
-  }
-} */
-
-@media (max-width: 768px) {
-  #container {
-    transform: scale(2);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     float: none;
   }
 }
