@@ -1,7 +1,8 @@
 /*styles.css*/
 
 body {
-  background: #333 url(img/506464.jpg) center center;
+  /* background: #333 url(img/506464.jpg) center center; */
+  background: rgba(195, 228, 145, 0.457) top left repeat;
   background-size: cover;
   color: #1a1717;
 }
@@ -12,6 +13,7 @@ body {
   padding: 50px;
   box-sizing: border-box;
   background: url(img/paper-pattern.jpg) top left repeat;
+  /* background: rgba(153, 164, 137, 0.817) top left repeat; */
   box-shadow: 0 10px 15px -8px #000;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -89,13 +91,15 @@ button:active {
   display: block;
 }
 
-@media only screen and (max-width: 768px) {
-  body {
-    display: flex;
-  }
-
+@media (max-width: 768px) {
   #container {
-    margin-top: 5%;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
     transform: scale(2);
   }
 }
