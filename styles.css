@@ -66,12 +66,12 @@ button:active {
   top: 3px;
 }
 
-#totalTip {
+#impTotal {
   font-size: 50px;
   margin-top: 40px;
 }
 
-#totalTip:before {
+#impTotal:before {
   content: "Tip amount";
   font-size: 14px;
   font-weight: bold;
@@ -79,12 +79,12 @@ button:active {
   text-transform: uppercase;
 }
 
-#totalTip sup {
+#impTotal sup {
   font-size: 24px;
   top: -18px;
 }
 
-#totalTip small {
+#impTotal small {
   font-size: 14px;
   font-weight: bold;
   display: block;

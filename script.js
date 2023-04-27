@@ -25,8 +25,8 @@ function convertToPesoWithTax() {
 }
 
 //Esconder luego mostrar resultado
-document.getElementById("totalTip").style.display = "none";
-document.getElementById("each").style.display = "none";
+document.getElementById("impTotal").style.display = "none";
+// document.getElementById("each").style.display = "none";
 
 //DOM click que callea la function
 document.getElementById("calculate").onclick = function () {
