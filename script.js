@@ -1,6 +1,6 @@
 "strict mode";
 
-//Function//
+//Function
 
 function convertToPesoWithTax() {
   const dollarAmount = document.getElementById("Monto").value;
@@ -20,7 +20,7 @@ function convertToPesoWithTax() {
     .catch((error) => {
       console.error(error);
       document.getElementById("peso-amount").innerHTML =
-        "Error: Unable to retrieve exchange rates.";
+        "Error: Configurando Js.";
     });
 }
 
