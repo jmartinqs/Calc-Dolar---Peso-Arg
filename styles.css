@@ -71,13 +71,13 @@ button:active {
   margin-top: 40px;
 }
 
-#impTotal:before {
+/* #impTotal:before {
   content: "Tip amount";
   font-size: 14px;
   font-weight: bold;
   display: block;
   text-transform: uppercase;
-}
+} */
 
 #impTotal sup {
   font-size: 24px;
