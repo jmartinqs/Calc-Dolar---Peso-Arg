@@ -1,8 +1,10 @@
 "strict mode";
 
-//Function
+// Values
 
 const btnConvertir = document.querySelector(".btnConvert");
+
+// Function
 
 function convertToPesoWithTax() {
   const dollarAmount = document.getElementById("monto").value;
