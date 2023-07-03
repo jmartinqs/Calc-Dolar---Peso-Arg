@@ -2,28 +2,36 @@
 
 body {
   /* background: #333 url(img/506464.jpg) center center; */
-  background: rgba(195, 228, 145, 0.457) top left repeat;
+  background: rgba(0, 0, 0, 0.653) top left repeat;
   background-size: cover;
-  color: #1a1717;
+  color: #171a19;
 }
 
 #container {
-  width: 400px;
+  width: 450px;
   margin: 40px auto 0;
   padding: 50px;
   box-sizing: border-box;
-  background: url(img/paper-pattern.jpg) top left repeat;
-  box-shadow: 0 10px 15px -8px #000;
+  /* background: url(img/paper-pattern.jpg) top left repeat; */
+  background: rgb(226, 246, 226);
+  box-shadow: 0 0.5px 25px 0.5px #000;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 25px;
   text-align: center;
 }
 
+#dolarlbl {
+  /* border-bottom: solid 1px #000; */
+  text-decoration: 1px black;
+  justify-content: center;
+}
+
 h1 {
-  margin: 0 0 20px;
-  padding: 0 0 20px;
-  border-bottom: solid 1px rgb(12, 11, 11);
+  margin: 0 0 50px;
+  padding: 0 0 0px;
+  border-bottom: solid 1.3px rgb(7, 7, 7);
+  border-bottom-width: 1px;
 }
 
 form {
@@ -47,10 +55,10 @@ form input[type="text"] {
 }
 
 button {
-  background: #76e59b79;
+  background: #85a4a279;
   color: rgb(12, 12, 12);
   border-bottom: solid 2px #222;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 17px;
   padding: 20px 20px;
   width: 100%;
