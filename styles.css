@@ -1,7 +1,6 @@
 /*styles.css*/
 
 body {
-  /* background: #333 url(img/506464.jpg) center center; */
   background: rgba(0, 0, 0, 0.653) top left repeat;
   background-size: cover;
   color: #171a19;
@@ -12,7 +11,6 @@ body {
   margin: 40px auto 0;
   padding: 50px;
   box-sizing: border-box;
-  /* background: url(img/paper-pattern.jpg) top left repeat; */
   background: rgb(226, 246, 226);
   box-shadow: 0 0.5px 25px 0.5px #000;
   -webkit-border-radius: 5px;
@@ -56,9 +54,7 @@ form input[type="text"] {
 
 button {
   background: #85a4a279;
-  color: rgb(12, 12, 12);
   border-bottom: solid 2px #222;
-  /* text-transform: uppercase; */
   font-size: 17px;
   padding: 20px 20px;
   width: 100%;
@@ -75,27 +71,24 @@ button:active {
 }
 
 #impTotal {
-  font-size: 50px;
-  margin-top: 40px;
+  font-size: 25px;
 }
 
-/* #impTotal:before {
-  content: "Tip amount";
-  font-size: 14px;
-  font-weight: bold;
-  display: block;
-  text-transform: uppercase;
-} */
-
-#impTotal sup {
-  font-size: 24px;
-  top: -18px;
+#peso-amount {
+  font-size: 23px;
+  text-decoration: underline 1px;
 }
 
-#impTotal small {
-  font-size: 14px;
-  font-weight: bold;
-  display: block;
+.paragraphs-container {
+  display: flex;
+}
+
+.left-paragraph {
+  flex: 1;
+}
+
+.right-paragraph {
+  flex: 1;
 }
 
 @media only screen and (max-width: 768px) {

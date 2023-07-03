@@ -3,6 +3,7 @@
 // Values
 
 const btnConvertir = document.querySelector(".btnConvert");
+const total = document.querySelector(".impTotal");
 
 // Function
 
@@ -30,7 +31,12 @@ function convertToPesoWithTax() {
 
 //Esconder luego mostrar resultado
 document.getElementById("impTotal").style.display = "none";
-// document.getElementById("each").style.display = "none";
+
+btnConvertir.addEventListener("click", function () {
+  impTotal.style.display = "block";
+});
+
+// console.log(impTotal);
 
 //DOM click que callea la function
 document.getElementById("calculate").onclick = function () {
@@ -40,9 +46,6 @@ document.getElementById("calculate").onclick = function () {
 //Overshadow en btnConvertir
 btnConvertir.addEventListener("mouseover", function () {
   this.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
-});
-btnConvertir.addEventListener("blur", function () {
-  this.style.backgroundColor = "#000";
 });
 
 btnConvertir.addEventListener("mouseout", function () {
