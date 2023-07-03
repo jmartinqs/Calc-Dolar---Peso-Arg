@@ -101,4 +101,16 @@ button:active {
     margin-right: auto;
     float: none;
   }
+
+  .paragraphs-container {
+    display: flex;
+  }
+
+  .left-paragraph {
+    flex: 1;
+  }
+
+  .right-paragraph {
+    flex: 1;
+  }
 }
