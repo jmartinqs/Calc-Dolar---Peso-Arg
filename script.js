@@ -5,10 +5,10 @@
 const btnConvertir = document.querySelector(".btnConvert");
 const total = document.querySelector(".impTotal");
 
-// Function
+// Function (for money convertion)
 
 function convertToPesoWithTax() {
-  const dollarAmount = document.getElementById("monto").value;
+  const dollarAmount = document.getElementById("dolar-amount").value;
   const apiUrl = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
 
   fetch(apiUrl)
@@ -29,7 +29,7 @@ function convertToPesoWithTax() {
     });
 }
 
-//Esconder luego mostrar resultado
+// Hide Element (it do show the result when btn clicked)
 document.getElementById("impTotal").style.display = "none";
 
 btnConvertir.addEventListener("click", function () {
@@ -38,12 +38,12 @@ btnConvertir.addEventListener("click", function () {
 
 // console.log(impTotal);
 
-//DOM click que callea la function
+// DOM click (called function)
 document.getElementById("calculate").onclick = function () {
   convertToPesoWithTax();
 };
 
-//Overshadow en btnConvertir
+// Overshadow on btnConvertir
 btnConvertir.addEventListener("mouseover", function () {
   this.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
 });

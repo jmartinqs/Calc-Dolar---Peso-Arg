@@ -19,10 +19,12 @@ body {
   text-align: center;
 }
 
-#dolarlbl {
+#dolar-box {
   /* border-bottom: solid 1px #000; */
   text-decoration: 1px black;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: left; */
 }
 
 h1 {
@@ -71,11 +73,11 @@ button:active {
 }
 
 #impTotal {
-  font-size: 25px;
+  font-size: 21px;
 }
 
 #peso-amount {
-  font-size: 23px;
+  font-size: 20px;
   text-decoration: underline 1px;
 }
 
