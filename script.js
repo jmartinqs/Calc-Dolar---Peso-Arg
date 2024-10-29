@@ -43,8 +43,6 @@ btnConvertir.addEventListener("click", function () {
   impTotal.style.display = "block";
 });
 
-// console.log(impTotal);
-
 // DOM click (called function)
 document.getElementById("calculate").onclick = function () {
   convertToPesoWithTax();
@@ -59,4 +57,3 @@ btnConvertir.addEventListener("mouseout", function () {
   this.style.backgroundColor = "#85a4a279";
 });
 
-// console.log(btnConvertir);
