@@ -8,24 +8,31 @@ const total = document.querySelector(".impTotal");
 // Function (for money convertion)
 
 function convertToPesoWithTax() {
-  const dollarAmount = document.getElementById("dolar-amount").value;
-  const apiUrl = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
+  const dollarAmount = parseFloat(
+    document.getElementById("dolar-amount").value
+  );
+  const apiUrl = "https://dolarapi.com/v1/dolares/blue";
 
+  // Money amount fetching and multiplying
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
-      const usdBuyRate = parseFloat(
-        data.find((casa) => casa.casa.nombre === "Dolar Oficial").casa.venta
-      );
-      const pesoAmount = dollarAmount * (usdBuyRate * 1.6);
-      document.getElementById(
-        "peso-amount"
-      ).innerHTML = `ARS ${pesoAmount.toFixed(2)}`;
+      const blueSellPrice = data && data.venta ? parseFloat(data.venta) : null;
+
+      if (blueSellPrice) {
+        const pesoAmount = dollarAmount * blueSellPrice;
+        document.getElementById(
+          "peso-amount"
+        ).innerHTML = `ARS ${pesoAmount.toFixed(2)}`;
+      } else {
+        throw new Error("Could not retrieve the exchange rate.");
+      }
     })
+
     .catch((error) => {
-      console.error(error);
+      console.error("Error fetching data or calculating amount:", error);
       document.getElementById("peso-amount").innerHTML =
-        "Error: Configurando Js.";
+        "Error: Please try again.";
     });
 }
 
